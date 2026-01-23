@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <style>
+    /* Light theme: dark gray for subtitle */
+    .subtitle-role {
+      color: #2d3748 !important; /* dark gray */
+    }
+    .dark .subtitle-role {
+      color: inherit !important;
+    }
+  </style>
+  <style>
+    .profile-img-light { display: block; }
+    .profile-img-dark { display: none; }
+    .dark .profile-img-light { display: none !important; }
+    .dark .profile-img-dark { display: block !important; }
+  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Umer Atiq – Manager Software Engineering (Fintech & Digital Payments)</title>
+  <meta name="description" content="Resume webpage for Umer Atiq – Manager Software Engineering specializing in digital payments, ISO 8583, RAAST, and scalable fintech solutions."/>
+  <meta property="og:title" content="Umer Atiq – Manager Software Engineering (Fintech & Digital Payments)"/>
+  <meta property="og:description" content="Java • Spring Boot • Hibernate • Microservices • ISO 8583 • RAAST • Digital Payments • Leadership Management • Oracle • SQL Server"/>
+  <meta property="og:type" content="website"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+  --main-bg: #e5e7eb;
+  --card: #edeef0;
+  --ink: #203a43;
+  --muted: #64748b;
+  --border: #e2e8f0;
+  --tag-bg: #e5e7eb;
+  --tag-color: #203a43;
+  --tag-border: #e2e8f0;
+  --section-bg: #edeef0;
+  /* User-specified elegant light gradient for light theme */
+  --hover-gradient: linear-gradient(90deg, #ece9e6 0%, #ffffff 100%);
+  --hover-shadow: #ece9e6b0;
+  --hover-text: #111;
+    }
+    .dark:root {
+  --main-bg: #0f172a;
+  --card: #1e293b;
+  --ink: #e0edff;
+  --muted: #94a3b8;
+  --border: #334155;
+  --tag-bg: #1e293b;
+  --tag-color: #e0edff;
+  --tag-border: #334155;
+  --section-bg: #1e293b;
+  --hover-gradient: linear-gradient(90deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+  --hover-shadow: #60a5fabb;
+  --hover-text: #fff;
+    }
+    @media print {
+      .no-print { display: none !important; }
+      a[href^="http"]::after { content: " (" attr(href) ")"; font-weight: normal; }
+      body { color: #000; }
+    }
+  </style>
+  <script>
+    function initTheme() {
+      const saved = localStorage.getItem('theme');
+      if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    }
+    function toggleTheme() {
+      const isDark = document.documentElement.classList.toggle('dark');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+      initTheme();
+      document.getElementById('year').textContent = new Date().getFullYear();
+      // Fix theme button event for all theme buttons
+      document.querySelectorAll('button[onclick="toggleTheme()"]')
+        .forEach(btn => btn.onclick = toggleTheme);
+    });
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Umer Atiq",
+    "jobTitle": "Manager Software Engineering – Fintech & Digital Payments",
+    "url": "https://www.linkedin.com/in/umer-atiq",
+    "sameAs": ["https://www.linkedin.com/in/umer-atiq"],
+    "address": {"@type":"PostalAddress","addressLocality":"Karachi","addressCountry":"PK"}
+  }
+  </script>
+</head>
+<body style="background: var(--main-bg) !important; color: var(--ink) !important;" class="antialiased">
+  <!-- Top Bar -->
+  <div class="no-print sticky top-0 z-30 backdrop-blur supports-[backdrop-filter]:bg-white/50 dark:supports-[backdrop-filter]:bg-slate-900/50 border-b border-slate-200/70 dark:border-slate-700">
+    <div class="max-w-5xl mx-auto px-4 py-3 flex flex-wrap items-center gap-2 justify-between">
+  <div class="flex-1 min-w-0 text-sm sm:text-base font-medium">Software Engineer</div>
+      <div class="flex flex-wrap items-center gap-2 min-w-0">
+        <button onclick="window.print()" aria-label="Print or Save PDF" class="inline-flex items-center rounded-xl px-3 py-2 border border-slate-300 dark:border-slate-600 hover:bg-slate-100 dark:hover:bg-slate-800 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-3a2 2 0 012-2h16a2 2 0 012 2v3a2 2 0 01-2 2h-2M6 14h12M8 22h8v-6H8v6z"/></svg>
+          <span class="hidden sm:inline ml-2">Print / Save PDF</span>
+        </button>
+        <button onclick="toggleTheme()" aria-label="Toggle Theme" class="inline-flex items-center rounded-xl px-3 py-2 border border-slate-300 dark:border-slate-600 hover:bg-slate-100 dark:hover:bg-slate-800 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M21.752 15.002A9.718 9.718 0 0112 21.75c-5.385 0-9.75-4.365-9.75-9.75 0-4.28 2.72-7.93 6.528-9.29.548-.207 1.11.272.987.846A7.5 7.5 0 0012 19.5a7.5 7.5 0 007.194-10.235c-.223-.57.44-1.048.987-.84a9.718 9.718 0 011.571 6.577z"/></svg>
+          <span class="hidden sm:inline ml-2">Theme</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Container -->
+  <main class="max-w-5xl mx-auto px-4 py-8 sm:py-12">
+    <!-- Header Card -->
+    <section class="bg-white/90 dark:bg-slate-800/70 rounded-2xl shadow-sm ring-1 ring-slate-200 dark:ring-slate-700 p-6 sm:p-8">
+      <div class="flex flex-row items-center mb-6 gap-8 mobile-profile-header">
+        <!-- Placeholder image; replace src with your headshot URL if desired -->
+        <span class="mobile-profile-img-wrapper">
+          <img src="https://i.postimg.cc/VNZNYYcd/Profile-white.png"
+            alt="Profile picture"
+            class="profile-img-light mobile-profile-img w-28 h-40 sm:w-40 sm:h-52 md:w-48 md:h-60 max-w-xs border-4 border-slate-300 object-cover shadow-lg mb-0 rounded-xl bg-white" />
+          <img src="https://i.postimg.cc/kgxMtQPr/Profile-blue.png"
+            alt="Profile picture dark"
+            class="profile-img-dark mobile-profile-img w-28 h-40 sm:w-40 sm:h-52 md:w-48 md:h-60 max-w-xs border-4 border-slate-300 object-cover shadow-lg mb-0 rounded-xl bg-white" />
+        </span>
+        <div class="flex-1 mobile-profile-info">
+          <div class="mobile-name-role">
+            <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight mobile-title">Umer Atiq</h1>
+            <p class="mt-1 text-lg sm:text-xl text-slate-600 dark:text-slate-300 mobile-role"><span class="subtitle-role">Manager Software Engineering — Fintech & Digital Payments</span></p>
+          </div>
+          <p class="mt-3 max-w-3xl text-sm sm:text-base text-slate-700 dark:text-slate-300 mobile-objective">
+            Experienced Software Engineering Manager with 5+ years of expertise in <strong>Java backend development</strong> and <strong>digital payment systems</strong>. Proven track record in designing and implementing robust backend architectures for financial institutes using <strong>Java, Spring Boot, Hibernate, JPA</strong>, and <strong>Oracle/SQL Server</strong>. Specialized in <strong>ISO8583</strong> standards and driving <strong>instant payments innovation (RAAST)</strong>. Expert in <strong>microservices architecture</strong>, <strong>Spring Security</strong>, and <strong>Agile methodologies</strong>. Strong leader in mentoring engineering teams, managing full software development lifecycle, and delivering high-quality, scalable solutions that exceed expectations. Passionate about continuous learning, staying ahead of industry trends, and propelling fintech innovation to new heights.
+          </p>
+        </div>
+      </div>
+      <div class="sm:flex sm:items-end sm:justify-between gap-6">
+        <ul class="text-sm text-slate-700 dark:text-slate-300 space-y-1">
+          <li class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.25 4.5l19.5 0M6 3v18m12-18v18M2.25 19.5l19.5 0"/></svg>
+            <a class="hover:underline" href="https://www.linkedin.com/in/umer-atiq" target="_blank" rel="noopener">LinkedIn</a>
+          </li>
+          <li class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657A8 8 0 116.343 5.343 8 8 0 0117.657 16.657z"/></svg>
+            <span>Karachi, Pakistan (On-site)</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 12v1.5a4 4 0 01-8 0V12m8 0a4 4 0 00-8 0m8 0V9a4 4 0 00-8 0v3"/></svg>
+            <a class="hover:underline" href="mailto:umeratiq007@gmail.com">umeratiq007@gmail.com</a>
+          </li>
+          <li class="flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8"/></svg>
+            <a class="hover:underline" href="tel:+923322255541">+92 332 2255541</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Grid -->
+    <section class="mt-8 grid md:grid-cols-3 gap-8">
+      <!-- Left column -->
+      <aside class="md:col-span-1 space-y-8">
+        <!-- Skills -->
+        <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-sm ring-1 ring-slate-200 dark:ring-slate-700 p-6">
+          <h2 class="text-lg font-semibold mb-4 mobile-section-title">Key Skills</h2>
+          <div class="skills-cloud flex flex-wrap gap-2 mobile-skills-cloud">
+            <span class="skill-tag">Leadership Management</span>
+            <span class="skill-tag">Oracle Database</span>
+            <span class="skill-tag">JPA</span>
+            <span class="skill-tag">Advising People</span>
+            <span class="skill-tag">Microservices</span>
+            <span class="skill-tag">Software Development</span>
+            <span class="skill-tag">Financial Services</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Spring Boot</span>
+            <span class="skill-tag">Hibernate</span>
+            <span class="skill-tag">Spring Security</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">C#</span>
+            <span class="skill-tag">Microsoft SQL Server</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">Data Science</span>
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">Microsoft Office</span>
+          </div>
+        </div>
+        <style>
+        .skills-cloud {
+          animation: fadeInSkills 1.2s 0.3s both;
+        }
+        @keyframes fadeInSkills {
+          from { opacity: 0; transform: translateY(20px) scale(0.98); }
+          to { opacity: 1; transform: translateY(0) scale(1); }
+        }
+        .skill-tag, .tool-tag {
+          background: var(--tag-bg);
+          color: var(--tag-color);
+          font-weight: 500;
+          font-size: 0.97rem;
+          border-radius: 18px;
+          padding: 6px 16px;
+          box-shadow: 0 2px 12px #203A4311;
+          border: 1.5px solid var(--tag-border);
+          letter-spacing: 0.5px;
+          transition: background 0.3s, color 0.3s, transform 0.2s cubic-bezier(.68,-0.55,.27,1.55), box-shadow 0.3s, border 0.3s, opacity 0.3s;
+          cursor: pointer;
+          opacity: 1;
+          animation: popIn 0.7s forwards;
+          margin-bottom: 2px;
+        }
+        .skills-cloud .skill-tag:nth-child(1) { animation-delay: 0.1s; }
+        .skills-cloud .skill-tag:nth-child(2) { animation-delay: 0.15s; }
+        .skills-cloud .skill-tag:nth-child(3) { animation-delay: 0.2s; }
+        .skills-cloud .skill-tag:nth-child(4) { animation-delay: 0.25s; }
+        .skills-cloud .skill-tag:nth-child(5) { animation-delay: 0.3s; }
+        .skills-cloud .skill-tag:nth-child(6) { animation-delay: 0.35s; }
+        .skills-cloud .skill-tag:nth-child(7) { animation-delay: 0.4s; }
+        .skills-cloud .skill-tag:nth-child(8) { animation-delay: 0.45s; }
+        .skills-cloud .skill-tag:nth-child(9) { animation-delay: 0.5s; }
+        .skills-cloud .skill-tag:nth-child(10) { animation-delay: 0.55s; }
+        .skills-cloud .skill-tag:nth-child(11) { animation-delay: 0.6s; }
+        .skills-cloud .skill-tag:nth-child(12) { animation-delay: 0.65s; }
+        .skills-cloud .skill-tag:nth-child(13) { animation-delay: 0.7s; }
+        .skills-cloud .skill-tag:nth-child(14) { animation-delay: 0.75s; }
+        .skills-cloud .skill-tag:nth-child(15) { animation-delay: 0.8s; }
+        .skills-cloud .skill-tag:nth-child(16) { animation-delay: 0.85s; }
+        .skills-cloud .skill-tag:nth-child(17) { animation-delay: 0.9s; }
+        .skills-cloud .skill-tag:nth-child(18) { animation-delay: 0.95s; }
+        .skills-cloud .skill-tag:nth-child(19) { animation-delay: 1.0s; }
+        .skills-cloud .skill-tag:nth-child(20) { animation-delay: 1.05s; }
+        @keyframes popIn {
+          from { opacity: 0; transform: scale(0.7); }
+          60% { opacity: 1; transform: scale(1.15); }
+          to { opacity: 1; transform: scale(1); }
+        }
+        .skill-tag:hover, .tool-tag:hover {
+          background: var(--hover-gradient);
+          color: var(--hover-text);
+          transform: scale(1.13) translateY(-2px);
+          box-shadow: 0 4px 16px var(--hover-shadow);
+          border-color: #203a43;
+          animation: cursorPulse 0.4s;
+          opacity: 1;
+        }
+        @media (hover: hover) {
+          .skill-tag:hover, .tool-tag:hover, .projects-animated .project-card:hover, .experience-animated .experience-card:hover {
+            cursor: pointer;
+          }
+        }
+        @keyframes cursorPulse {
+          0% { transform: scale(1.0); }
+          50% { transform: scale(1.18) translateY(-2px); }
+          100% { transform: scale(1.13) translateY(-2px); }
+        }
+        @media (max-width: 640px) {
+          .skills-cloud { justify-content: center; }
+          .skill-tag, .tool-tag { font-size: 0.92rem; padding: 5px 10px; }
+        }
+        /* Tools & Tech tags */
+        .tools-cloud {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px;
+          margin-top: 4px;
+        }
+        /* Section backgrounds for Key Skills, Education, Tools & Tech */
+        .bg-white, .bg-white\/90, .bg-white\/80, .dark .bg-slate-800, .dark .bg-slate-800\/70 {
+          background: var(--card) !important;
+          color: var(--ink) !important;
+        }
+        /* Projects hover effect */
+        .projects-animated .project-card,
+        .experience-animated .experience-card {
+          background: var(--card);
+          color: var(--ink);
+          border-radius: 12px;
+          box-shadow: 0 1px 6px #2563eb11;
+          padding: 14px 18px;
+          transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.2s cubic-bezier(.68,-0.55,.27,1.55);
+        }
+        .dark .projects-animated .project-card,
+        .dark .experience-animated .experience-card {
+          background: var(--card);
+          color: var(--ink);
+        }
+        .projects-animated .project-card:hover,
+        .experience-animated .experience-card:hover {
+          background: var(--hover-gradient);
+          color: var(--hover-text);
+          box-shadow: 0 4px 24px var(--hover-shadow);
+          transform: scale(1.035) translateY(-2px);
+          animation: cursorPulse 0.4s;
+          cursor: pointer;
+        }
+        /* Section backgrounds */
+        section.bg-white, section.bg-white\/90, section.bg-white\/80 {
+          background: var(--card) !important;
+        }
+        .dark section.bg-white, .dark section.bg-white\/90, .dark section.bg-white\/80 {
+          background: var(--card) !important;
+        }
+        .ring-slate-200 { border-color: var(--border) !important; }
+        .dark .ring-slate-700 { border-color: var(--border) !important; }
+        .text-slate-700, .text-slate-900 { color: var(--ink) !important; }
+        .dark .text-slate-100, .dark .text-slate-300 { color: var(--ink) !important; }
+        .border-slate-300, .border-slate-200 { border-color: var(--border) !important; }
+        .dark .border-slate-600, .dark .border-slate-700 { border-color: var(--border) !important; }
+      </style>
+
+        <!-- Education -->
+        <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-sm ring-1 ring-slate-200 dark:ring-slate-700 p-6">
+          <h2 class="text-lg font-semibold mb-4 mobile-section-title">Education</h2>
+          <div class="space-y-4 text-sm">
+            <div class="education-entry">
+              <p class="font-medium">B.S. Computer Science</p>
+              <p class="text-slate-600 dark:text-slate-400">Karachi Institute of Economics & Technology (KIET)</p>
+              <p class="text-slate-500 dark:text-slate-400">2016 – 2019</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-sm ring-1 ring-slate-200 dark:ring-slate-700 p-6" style="min-height: 626px;">
+          <h2 class="text-lg font-semibold mb-4 mobile-section-title">Tools & Tech</h2>
+          <div class="tools-cloud flex flex-wrap gap-2 mobile-tools-cloud">
+            <span class="tool-tag">Spring Boot</span>
+            <span class="tool-tag">Hibernate</span>
+            <span class="tool-tag">JPA</span>
+            <span class="tool-tag">Spring Security</span>
+            <span class="tool-tag">Oracle Database</span>
+            <span class="tool-tag">MS SQL Server</span>
+            <span class="tool-tag">MySQL</span>
+            <span class="tool-tag">Git / GitLab</span>
+            <span class="tool-tag">Microservices</span>
+            <span class="tool-tag">REST APIs</span>
+            <span class="tool-tag">Agile</span>
+            <span class="tool-tag">RAAST Integration</span>
+            <span class="tool-tag">ISO8583</span>
+            <span class="tool-tag">Digital Payments</span>
+            <span class="tool-tag">Backend Architecture</span>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Right column -->
+      <div class="md:col-span-2 space-y-8">
+        <!-- Experience -->
+        <section class="bg-white dark:bg-slate-800 rounded-2xl shadow-sm ring-1 ring-slate-200 dark:ring-slate-700 p-6">
+          <h2 class="text-lg font-semibold mb-6">Experience</h2>
+          <div class="experience-animated">
+            <article class="mb-8 experience-card">
+              <header class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between">
+                <h3 class="text-base sm:text-lg font-semibold">Manager Software Engineering Level 1 — Paysys Labs</h3>
+                <p class="text-sm text-slate-500">Sep 2020 – Present</p>
+              </header>
+              <ul class="mt-3 list-disc pl-5 space-y-2 text-sm">
+                <li>Lead a team of software engineers, driving the design, development, and delivery of complex software projects across digital banking and payment systems.</li>
+                <li>Mentor and guide junior team members, fostering a collaborative environment and providing technical leadership throughout the software development lifecycle.</li>
+                <li>Oversee end-to-end development, from planning and coding to testing and deployment, ensuring high-quality deliverables that meet business objectives.</li>
+                <li>Collaborate with cross-functional teams, including product management and QA, to ensure project goals are met on time and within scope.</li>
+                <li>Spearhead technical innovation and process improvements to enhance system architecture, scalability, and performance for fintech solutions.</li>
+                <li>Design, code, and debug complex software projects, taking full ownership of the development, documentation, and rigorous testing of software solutions.</li>
+                <li>Lead the maintenance and upgrades of existing software systems, making strategic technology decisions for enhanced productivity and reliability.</li>
+                <li>Pioneer research and development efforts, driving the implementation of cutting-edge features and elevating application usability.</li>
+                <li>Manage team workload and priorities, effectively addressing roadblocks and ensuring clear communication between stakeholders.</li>
+                <li>Uphold and promote impeccable development principles, guaranteeing timely delivery of solutions while adhering to budgetary constraints and quality standards.</li>
+              </ul>
+            </article>
+            <article class="mb-8 experience-card">
+              <header class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between">
+                <h3 class="text-base sm:text-lg font-semibold">Software Engineer — iTecknologi Group</h3>
+                <p class="text-sm text-slate-500">Nov 2019 – Feb 2020</p>
+              </header>
+              <ul class="mt-3 list-disc pl-5 space-y-2 text-sm">
+                <li>Worked on software development projects, contributing to design, implementation, and testing phases.</li>
+                <li>Collaborated with team members to deliver quality software solutions that met client requirements.</li>
+                <li>Gained foundational experience in software engineering practices and professional development workflows.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <!-- Projects / Integrations -->
+        <section class="bg-white dark:bg-slate-800 rounded-2xl shadow-sm ring-1 ring-slate-200 dark:ring-slate-700 p-6">
+          <h2 class="text-lg font-semibold mb-4">Projects & Integrations</h2>
+          <div class="space-y-5 text-sm projects-animated mobile-projects-responsive">
+            <div class="project-card">
+              <p class="font-medium">Real-Time Payment System Integration (Eth-Switch) — ISO 20022 Standards Implementation | 2024 – Present</p>
+              <p class="mt-1 text-slate-700 dark:text-slate-300">
+                Architected and implemented instant payment solutions leveraging <strong>ISO 20022</strong> messaging standards for interbank fund transfers. Developed comprehensive <strong>PACS</strong> message handlers enabling seamless <strong>P2P and P2M</strong> transaction processing between partner financial institutions. Engineered high-performance <strong>RESTful APIs</strong> with optimized <strong>JSON</strong> request/response structures to streamline bank integration workflows and reduce onboarding time. Implementation encompasses XSD schema validation, distributed tracing with correlation IDs, advanced performance optimization, and extensive collaboration with platform providers to deliver production-grade, secure, and thoroughly documented financial solutions.
+              </p>
+            </div>
+            <div class="project-card">
+              <p class="font-medium">National Banking Platform — API Development & Integration | 2023 – Present</p>
+              <p class="mt-1 text-slate-700 dark:text-slate-300">
+                Engineered and maintained production-grade RESTful services powering nationwide digital banking applications; designed intelligent middleware layers optimizing data transmission and application responsiveness; fortified API endpoints implementing <strong>Spring Security</strong> frameworks and industry security standards.
+              </p>
+            </div>
+            <div class="project-card">
+              <p class="font-medium">Digital Banking Services Platform — API & Middleware Architecture | 2023 – Present</p>
+              <p class="mt-1 text-slate-700 dark:text-slate-300">
+                Designed and implemented horizontally scalable API infrastructure and middleware connecting diverse internal and external financial systems; enhanced system reliability, throughput, and code maintainability; integrated security controls and regulatory compliance throughout the software development lifecycle.
+              </p>
+            </div>
+          </div>
+        </section>
+        <style>
+          /* Mobile-only responsive changes */
+          @media (max-width: 640px) {
+            .mobile-profile-header {
+              flex-direction: column !important;
+              gap: 1.2rem !important;
+              align-items: flex-start !important;
+            }
+            .mobile-profile-img-wrapper {
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            .mobile-profile-img {
+              width: 112px !important;
+              height: 150px !important;
+              max-width: 90vw !important;
+              max-height: 40vw !important;
+              margin-bottom: 0.5rem !important;
+              margin-left: auto !important;
+              margin-right: auto !important;
+              display: block !important;
+              object-fit: cover !important;
+              border-radius: 0.75rem !important;
+            }
+            .profile-img-light { display: block !important; }
+            .profile-img-dark { display: none !important; }
+            .dark .profile-img-light { display: none !important; }
+            .dark .profile-img-dark { display: block !important; }
+            .mobile-name-role {
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              align-items: center !important;
+              margin-left: 0 !important;
+              margin-right: 0 !important;
+            }
+            .mobile-title {
+              text-align: center !important;
+              font-size: 1.5rem !important;
+              margin-bottom: 0 !important;
+            }
+            .mobile-role {
+              text-align: center !important;
+              font-size: 1.1rem !important;
+              margin-top: 0.1rem !important;
+              margin-bottom: 0.5rem !important;
+            }
+            .mobile-profile-info {
+              width: 100% !important;
+              text-align: left !important;
+            }
+            .mobile-name-role {
+              margin-left: 0.5rem !important;
+            }
+            .mobile-title {
+              text-align: left !important;
+              font-size: 1.5rem !important;
+              margin-bottom: 0 !important;
+            }
+            .mobile-role {
+              text-align: left !important;
+              font-size: 1.1rem !important;
+              margin-top: 0.1rem !important;
+              margin-bottom: 0.5rem !important;
+            }
+            .mobile-objective {
+              text-align: left !important;
+              margin-top: 0.7rem !important;
+              margin-left: 0.5rem !important;
+              margin-right: 0.5rem !important;
+            }
+            /* Section titles left-aligned like Education */
+            .mobile-section-title {
+              text-align: left !important;
+              margin-left: 0 !important;
+            }
+            /* Key Skills and Tools & Tech elements left-aligned */
+            .mobile-skills-cloud, .mobile-tools-cloud {
+              justify-content: flex-start !important;
+            }
+            /* Project cards responsive */
+            .mobile-projects-responsive {
+              display: flex !important;
+              flex-direction: column !important;
+              gap: 0.7rem !important;
+            }
+            .projects-animated .project-card {
+              padding: 10px 8px !important;
+            }
+          }
+        .projects-animated .project-card {
+          background: transparent;
+          border-radius: 12px;
+          box-shadow: 0 1px 6px #2563eb11;
+          padding: 14px 18px;
+          transition: background 0.3s, box-shadow 0.3s, color 0.3s, transform 0.2s cubic-bezier(.68,-0.55,.27,1.55);
+        }
+        .projects-animated .project-card:hover {
+          background: var(--hover-gradient);
+          color: var(--hover-text);
+          box-shadow: 0 4px 24px var(--hover-shadow);
+          transform: scale(1.035) translateY(-2px);
+          animation: cursorPulse 0.4s;
+          cursor: pointer;
+        }
+        .education-entry {
+          background: transparent;
+          border-radius: 12px;
+          box-shadow: 0 1px 6px #2563eb11;
+          padding: 14px 18px;
+          transition: background 0.3s, box-shadow 0.3s, color 0.3s, transform 0.2s cubic-bezier(.68,-0.55,.27,1.55);
+        }
+        .education-entry:hover {
+          background: var(--hover-gradient);
+          color: var(--hover-text);
+          box-shadow: 0 4px 24px var(--hover-shadow);
+          transform: scale(1.035) translateY(-2px);
+          animation: cursorPulse 0.4s;
+          cursor: pointer;
+        }
+        </style>
+      </div>
+    </section>
+  </main>
+
+  <footer class="max-w-5xl mx-auto px-4 pb-12 text-center text-xs text-slate-500">
+    © <span id="year"></span> Umer Atiq
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
