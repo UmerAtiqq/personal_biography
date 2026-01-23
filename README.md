@@ -1,11 +1,11 @@
 
-# Personal Portfolio – Mutaher Affan
+# Personal Portfolio – Umer Atiq
 
-This project is a personal portfolio website for Mutaher Affan. It contains professional details, experience, education, skills, and contact information, all presented in a modern, responsive web layout.
+This project is a personal portfolio website for Umer Atiq. It contains professional details, experience, education, skills, and contact information, all presented in a modern, responsive web layout.
 
 ## Project Details
 - The site showcases my background as a Backend Engineer, including my experience, education, and key skills.
-- The project is open source and available on GitHub: [personal-biography](https://github.com/mutaheraffan/personal-biography)
+- The project is open source and available on GitHub: [personal-biography](https://github.com/UmerAtiqq/personal_biography)
 
 
 ## Tools & Services Used
@@ -19,9 +19,10 @@ This project is a personal portfolio website for Mutaher Affan. It contains prof
 ## Profile Picture URLs
 
 - Light Theme:  
-	https://i.postimg.cc/BZ8tc5zL/Online-Resume-Profile-Picture-Headshot-Master.png
+	https://i.postimg.cc/VNZNYYcd/Profile-white.png
 - Dark Theme:  
-	https://i.postimg.cc/Y9d2f06x/Online-Resume-Profile-Picture-Headshot-Master-Blue-Test.png
+	https://i.postimg.cc/kgxMtQPr/Profile-blue.png
 
 ---
 Feel free to fork or use this project as a template for your own portfolio!
+
