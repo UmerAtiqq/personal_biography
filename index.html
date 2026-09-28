@@ -1,549 +1,576 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-  <style>
-    /* Light theme: dark gray for subtitle */
-    .subtitle-role {
-      color: #2d3748 !important; /* dark gray */
-    }
-    .dark .subtitle-role {
-      color: inherit !important;
-    }
-  </style>
-  <style>
-    .profile-img-light { display: block; }
-    .profile-img-dark { display: none; }
-    .dark .profile-img-light { display: none !important; }
-    .dark .profile-img-dark { display: block !important; }
-  </style>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Umer Atiq – Manager Software Engineering (Fintech & Digital Payments)</title>
-  <meta name="description" content="Resume webpage for Umer Atiq – Manager Software Engineering specializing in digital payments, ISO 8583, RAAST, and scalable fintech solutions."/>
-  <meta property="og:title" content="Umer Atiq – Manager Software Engineering (Fintech & Digital Payments)"/>
-  <meta property="og:description" content="Java • Spring Boot • Hibernate • Microservices • ISO 8583 • RAAST • Digital Payments • Leadership Management • Oracle • SQL Server"/>
-  <meta property="og:type" content="website"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    :root {
-  --main-bg: #e5e7eb;
-  --card: #edeef0;
-  --ink: #203a43;
-  --muted: #64748b;
-  --border: #e2e8f0;
-  --tag-bg: #e5e7eb;
-  --tag-color: #203a43;
-  --tag-border: #e2e8f0;
-  --section-bg: #edeef0;
-  /* User-specified elegant light gradient for light theme */
-  --hover-gradient: linear-gradient(90deg, #ece9e6 0%, #ffffff 100%);
-  --hover-shadow: #ece9e6b0;
-  --hover-text: #111;
-    }
-    .dark:root {
-  --main-bg: #0f172a;
-  --card: #1e293b;
-  --ink: #e0edff;
-  --muted: #94a3b8;
-  --border: #334155;
-  --tag-bg: #1e293b;
-  --tag-color: #e0edff;
-  --tag-border: #334155;
-  --section-bg: #1e293b;
-  --hover-gradient: linear-gradient(90deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
-  --hover-shadow: #60a5fabb;
-  --hover-text: #fff;
-    }
-    @media print {
-      .no-print { display: none !important; }
-      a[href^="http"]::after { content: " (" attr(href) ")"; font-weight: normal; }
-      body { color: #000; }
-    }
-  </style>
-  <script>
-    function initTheme() {
-      const saved = localStorage.getItem('theme');
-      if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.classList.add('dark');
-      } else {
-        document.documentElement.classList.remove('dark');
-      }
-    }
-    function toggleTheme() {
-      const isDark = document.documentElement.classList.toggle('dark');
-      localStorage.setItem('theme', isDark ? 'dark' : 'light');
-    }
-    document.addEventListener('DOMContentLoaded', function() {
-      initTheme();
-      document.getElementById('year').textContent = new Date().getFullYear();
-      // Fix theme button event for all theme buttons
-      document.querySelectorAll('button[onclick="toggleTheme()"]')
-        .forEach(btn => btn.onclick = toggleTheme);
-    });
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Umer Atiq",
-    "jobTitle": "Manager Software Engineering – Fintech & Digital Payments",
-    "url": "https://www.linkedin.com/in/umer-atiq",
-    "sameAs": ["https://www.linkedin.com/in/umer-atiq"],
-    "address": {"@type":"PostalAddress","addressLocality":"Karachi","addressCountry":"PK"}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Umer Atiq – Software Engineering Manager, Fintech & Digital Payments</title>
+<meta name="description" content="Umer Atiq is a Software Engineering Manager in Karachi leading a 16-member team that builds mobile banking, internet banking, back-office and the payment switch for NBP, Bank of Punjab, CDNS, Cerisma, Halan and PPCBL. Java, Spring Boot, ISO 8583, ISO 20022, RAAST.">
+<meta name="author" content="Umer Atiq">
+<link rel="canonical" href="https://umeratiq.netlify.app/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Umer Atiq – Software Engineering Manager, Fintech & Digital Payments">
+<meta property="og:description" content="Leads a 16-member team building digital banking and payment switching for banks in Pakistan. Delivered instant payments for EthSwitch, Ethiopia.">
+<meta property="og:url" content="https://umeratiq.netlify.app/">
+<meta property="og:image" content="https://i.postimg.cc/VNZNYYcd/Profile-white.png">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%230E3B43'/><text x='32' y='42' font-family='Arial' font-weight='700' font-size='28' fill='%23E2B354' text-anchor='middle'>UA</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Umer Atiq",
+  "jobTitle": "Software Engineering Manager",
+  "worksFor": { "@type": "Organization", "name": "Paysys Labs" },
+  "address": { "@type": "PostalAddress", "addressLocality": "Karachi", "addressCountry": "PK" },
+  "email": "mailto:umeratiq007@gmail.com",
+  "url": "https://umeratiq.netlify.app/",
+  "sameAs": ["https://www.linkedin.com/in/umer-atiq"],
+  "alumniOf": "PAF-Karachi Institute of Economics & Technology",
+  "knowsAbout": ["Digital Payments", "ISO 8583", "ISO 20022", "RAAST", "Payment Switching", "Mobile Banking", "Java", "Spring Boot", "Engineering Management"]
+}
+</script>
+<style>
+  :root {
+    --bg: #F2F4F3;
+    --surface: #FFFFFF;
+    --ink: #16232B;
+    --muted: #56666E;
+    --line: #D3DADB;
+    --petrol: #0E3B43;
+    --petrol-soft: #E3ECEC;
+    --amber: #B97F17;
+    --amber-line: #D39A2C;
+    --on-petrol: #EEF4F4;
+    --display: "IBM Plex Sans Condensed", "Arial Narrow", "Roboto Condensed", Arial, sans-serif;
+    --body: "IBM Plex Sans", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    color-scheme: light;
   }
-  </script>
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0F1A1E; --surface: #15242A; --ink: #E4ECEC; --muted: #9DB0B4; --line: #2A3D44;
+      --petrol: #0A2B31; --petrol-soft: #1B3239; --amber: #E2B354; --amber-line: #E2B354; --on-petrol: #E4ECEC;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0F1A1E; --surface: #15242A; --ink: #E4ECEC; --muted: #9DB0B4; --line: #2A3D44;
+    --petrol: #0A2B31; --petrol-soft: #1B3239; --amber: #E2B354; --amber-line: #E2B354; --on-petrol: #E4ECEC;
+    color-scheme: dark;
+  }
+  *, *::before, *::after { box-sizing: inherit; }
+  html { scroll-behavior: smooth; scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 64px); }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: var(--body); font-size: 17px; line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--amber-line); outline-offset: 3px; border-radius: 4px; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+  /* Nav */
+  .nav {
+    position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10;
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav .wrap { display: flex; align-items: center; gap: 20px; height: 56px; }
+  .nav .brand { font-family: var(--display); font-weight: 700; font-size: 19px; text-decoration: none; margin-right: auto; }
+  .nav nav { display: flex; gap: 20px; overflow-x: auto; }
+  .nav nav a { text-decoration: none; color: var(--muted); font-size: 15px; white-space: nowrap; }
+  .nav nav a:hover { color: var(--ink); }
+  .theme-btn {
+    background: none; border: 1px solid var(--line); color: var(--ink); border-radius: 999px;
+    width: 34px; height: 34px; cursor: pointer; display: grid; place-items: center; flex: none;
+  }
+  .theme-btn svg { width: 16px; height: 16px; }
+
+  /* Hero */
+  .hero { padding: 56px 0 40px; }
+  .hero-grid { display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: start; }
+  .hero h1 {
+    font-family: var(--display); font-weight: 700; letter-spacing: -0.01em;
+    font-size: clamp(44px, 7vw, 76px); line-height: 0.98; margin: 0 0 14px;
+  }
+  .hero .role { font-size: clamp(19px, 2.2vw, 23px); margin: 0 0 18px; color: var(--ink); max-width: 34ch; }
+  .hero .intro { color: var(--muted); max-width: 62ch; margin: 0 0 26px; }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px; padding: 11px 18px; border-radius: 8px;
+    font-weight: 600; font-size: 15px; text-decoration: none; border: 1px solid var(--line); background: var(--surface);
+  }
+  .btn.primary { background: var(--petrol); color: var(--on-petrol); border-color: var(--petrol); }
+  :root[data-theme="dark"] .btn.primary { background: var(--amber); color: #13201F; border-color: var(--amber); }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .btn.primary { background: var(--amber); color: #13201F; border-color: var(--amber); } }
+  .btn:hover { border-color: var(--ink); }
+  .meta-line { margin-top: 18px; color: var(--muted); font-size: 15px; }
+  .photo {
+    width: 200px; aspect-ratio: 4 / 5; border-radius: 14px; overflow: hidden;
+    border: 1px solid var(--line); background: var(--petrol-soft);
+  }
+  .photo img { width: 100%; height: 100%; object-fit: cover; }
+  .photo .dark { display: none; }
+  :root[data-theme="dark"] .photo .light { display: none; }
+  :root[data-theme="dark"] .photo .dark { display: block; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .photo .light { display: none; }
+    :root:not([data-theme="light"]) .photo .dark { display: block; }
+  }
+
+  /* Signature: transaction route */
+  .route {
+    background: var(--petrol); color: var(--on-petrol); border-radius: 18px;
+    padding: 28px 28px 22px; margin-top: 8px;
+  }
+  .route h2 { font-family: var(--display); font-weight: 600; font-size: 22px; margin: 0 0 4px; }
+  .route p.sub { margin: 0 0 18px; color: color-mix(in srgb, var(--on-petrol) 72%, transparent); font-size: 15px; max-width: 70ch; }
+  .route-scroll { overflow-x: auto; }
+  .route svg { width: 100%; min-width: 760px; height: auto; display: block; }
+  .route .node rect { fill: color-mix(in srgb, var(--on-petrol) 8%, transparent); stroke: color-mix(in srgb, var(--on-petrol) 30%, transparent); }
+  .route .node.switch rect { fill: var(--amber-line); stroke: var(--amber-line); }
+  .route text { font-family: var(--body); fill: var(--on-petrol); }
+  .route .node.switch text { fill: #13201F; }
+  .route .t-title { font-family: var(--display); font-weight: 600; font-size: 17px; }
+  .route .t-small { font-size: 12.5px; opacity: .8; }
+  .route .node.switch .t-small { opacity: 1; }
+  .route .wire { stroke: color-mix(in srgb, var(--on-petrol) 45%, transparent); stroke-width: 1.5; fill: none; }
+  .route .wire.in { stroke: var(--amber-line); stroke-dasharray: 5 5; }
+  .route .pulse { fill: var(--amber-line); }
+  .route .legend { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 14px; font-size: 13.5px; color: color-mix(in srgb, var(--on-petrol) 75%, transparent); }
+  .route .legend span::before { content: ""; display: inline-block; width: 22px; height: 0; vertical-align: middle; margin-right: 8px; border-top: 1.5px solid color-mix(in srgb, var(--on-petrol) 60%, transparent); }
+  .route .legend span.in::before { border-top: 1.5px dashed var(--amber-line); }
+
+  .route svg.route-mobile { display: none; width: 100%; min-width: 0; height: auto; }
+  @media (max-width: 640px) {
+    .route-scroll { display: none; }
+    .route svg.route-mobile { display: block; }
+    .route .legend { display: none; }
+  }
+  :root[data-theme="dark"] .route { border: 1px solid var(--line); }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .route { border: 1px solid var(--line); } }
+  .figures { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid color-mix(in srgb, var(--on-petrol) 18%, transparent); margin-top: 22px; }
+  .figures div { padding: 16px 16px 4px 0; }
+  .figures b { display: block; font-family: var(--display); font-weight: 700; font-size: 30px; line-height: 1.1; color: var(--amber-line); }
+  .figures small { font-size: 14px; color: color-mix(in srgb, var(--on-petrol) 80%, transparent); }
+
+  /* Sections */
+  section.block { padding: 64px 0 8px; }
+  .block > .wrap > h2 {
+    font-family: var(--display); font-weight: 700; font-size: 34px; line-height: 1.1; margin: 0 0 28px;
+    padding-bottom: 12px; border-bottom: 2px solid var(--ink);
+  }
+  .lead { max-width: 68ch; margin: 0 0 8px; }
+
+  /* Timeline (a real sequence) */
+  .company { display: grid; grid-template-columns: 220px 1fr; gap: 32px; margin-bottom: 40px; }
+  .company-head h3 { font-family: var(--display); font-weight: 700; font-size: 24px; margin: 0; }
+  .company-head p { margin: 4px 0 0; color: var(--muted); font-size: 15px; }
+  .roles { list-style: none; margin: 0; padding: 0; border-left: 2px solid var(--line); }
+  .roles > li { position: relative; padding: 0 0 28px 26px; }
+  .roles > li::before {
+    content: ""; position: absolute; left: -7px; top: 8px; width: 12px; height: 12px; border-radius: 50%;
+    background: var(--bg); border: 2px solid var(--muted);
+  }
+  .roles > li.current::before { background: var(--amber-line); border-color: var(--amber-line); }
+  .role-title { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; align-items: baseline; }
+  .role-title h4 { margin: 0; font-size: 18px; font-weight: 600; }
+  .role-title time { color: var(--muted); font-size: 15px; font-variant-numeric: tabular-nums; }
+  .roles ul { margin: 10px 0 0; padding-left: 18px; }
+  .roles ul li { margin-bottom: 6px; max-width: 72ch; }
+  .roles ul li::marker { color: var(--amber); }
+
+  /* Platforms */
+  .platform { display: grid; grid-template-columns: 300px 1fr; gap: 32px; padding: 28px 0; border-top: 1px solid var(--line); }
+  .platform:first-of-type { border-top: 0; padding-top: 0; }
+  .platform h3 { font-family: var(--display); font-weight: 700; font-size: 24px; line-height: 1.15; margin: 0 0 6px; }
+  .platform .when { color: var(--muted); font-size: 15px; margin: 0 0 12px; }
+  .platform .stack { font-size: 14px; color: var(--muted); margin: 0; }
+  .platform .clients { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 0; padding: 0; list-style: none; }
+  .platform .clients li { font-size: 14px; padding: 4px 10px; border-radius: 6px; background: var(--petrol-soft); }
+  .platform .clients li.dev { background: none; border: 1px dashed var(--muted); color: var(--muted); }
+  dl.features { margin: 0; display: grid; grid-template-columns: 190px 1fr; gap: 10px 20px; }
+  dl.features dt { font-weight: 600; }
+  dl.features dd { margin: 0; max-width: 64ch; }
+  .platform ul { margin: 0; padding-left: 18px; }
+  .platform ul li { margin-bottom: 6px; max-width: 70ch; }
+  .platform ul li::marker { color: var(--amber); }
+  .earlier { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 8px; padding-top: 28px; border-top: 1px solid var(--line); }
+  .earlier h4 { margin: 0 0 4px; font-size: 18px; }
+  .earlier p { margin: 0; color: var(--muted); font-size: 15.5px; }
+  .earlier .when { font-size: 14.5px; margin-bottom: 6px; }
+
+  /* Skills */
+  .skills { display: grid; grid-template-columns: 1fr 1fr; gap: 0 40px; }
+  .skills div { padding: 14px 0; border-bottom: 1px solid var(--line); }
+  .skills h3 { font-size: 15px; font-weight: 600; margin: 0 0 4px; color: var(--muted); }
+  .skills p { margin: 0; }
+
+  /* Footer facts */
+  .facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+  .facts h3 { font-family: var(--display); font-weight: 600; font-size: 20px; margin: 0 0 8px; }
+  .facts p { margin: 0 0 10px; }
+  .facts .muted { color: var(--muted); font-size: 15px; }
+
+  .contact {
+    margin: 72px 0 0; padding: 56px 0; background: var(--petrol); color: var(--on-petrol);
+  }
+  .contact h2 { font-family: var(--display); font-weight: 700; font-size: clamp(30px, 4.4vw, 44px); line-height: 1.05; margin: 0 0 12px; max-width: 22ch; }
+  .contact p { margin: 0 0 24px; max-width: 60ch; color: color-mix(in srgb, var(--on-petrol) 80%, transparent); }
+  .contact .btn { background: transparent; color: var(--on-petrol); border-color: color-mix(in srgb, var(--on-petrol) 40%, transparent); }
+  .contact .btn.primary { background: var(--amber-line); color: #13201F; border-color: var(--amber-line); }
+  .contact .btn:hover { border-color: var(--on-petrol); }
+  footer { padding: 20px 0 28px; font-size: 14px; color: var(--muted); }
+
+  /* Responsive */
+  @media (max-width: 860px) {
+    .hero-grid { grid-template-columns: 1fr; }
+    .photo { width: 150px; order: -1; }
+    .figures { grid-template-columns: repeat(2, 1fr); }
+    .company, .platform { grid-template-columns: 1fr; gap: 16px; }
+    .earlier, .skills, .facts { grid-template-columns: 1fr; }
+    dl.features { grid-template-columns: 1fr; gap: 2px; }
+    dl.features dd { margin-bottom: 10px; }
+  }
+  @media (max-width: 560px) {
+    body { font-size: 16px; }
+    .nav nav { display: none; }
+    .hero { padding-top: 32px; }
+    .route { padding: 22px 18px 16px; border-radius: 14px; }
+  }
+  @media print {
+    .nav, .theme-btn, .contact .actions { display: none; }
+    body { background: #fff; }
+  }
+</style>
 </head>
-<body style="background: var(--main-bg) !important; color: var(--ink) !important;" class="antialiased">
-  <!-- Top Bar -->
-  <div class="no-print sticky top-0 z-30 backdrop-blur supports-[backdrop-filter]:bg-white/50 dark:supports-[backdrop-filter]:bg-slate-900/50 border-b border-slate-200/70 dark:border-slate-700">
-    <div class="max-w-5xl mx-auto px-4 py-3 flex flex-wrap items-center gap-2 justify-between">
-  <div class="flex-1 min-w-0 text-sm sm:text-base font-medium">Software Engineer</div>
-      <div class="flex flex-wrap items-center gap-2 min-w-0">
-        <button onclick="window.print()" aria-label="Print or Save PDF" class="inline-flex items-center rounded-xl px-3 py-2 border border-slate-300 dark:border-slate-600 hover:bg-slate-100 dark:hover:bg-slate-800 transition">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-3a2 2 0 012-2h16a2 2 0 012 2v3a2 2 0 01-2 2h-2M6 14h12M8 22h8v-6H8v6z"/></svg>
-          <span class="hidden sm:inline ml-2">Print / Save PDF</span>
-        </button>
-        <button onclick="toggleTheme()" aria-label="Toggle Theme" class="inline-flex items-center rounded-xl px-3 py-2 border border-slate-300 dark:border-slate-600 hover:bg-slate-100 dark:hover:bg-slate-800 transition">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M21.752 15.002A9.718 9.718 0 0112 21.75c-5.385 0-9.75-4.365-9.75-9.75 0-4.28 2.72-7.93 6.528-9.29.548-.207 1.11.272.987.846A7.5 7.5 0 0012 19.5a7.5 7.5 0 007.194-10.235c-.223-.57.44-1.048.987-.84a9.718 9.718 0 011.571 6.577z"/></svg>
-          <span class="hidden sm:inline ml-2">Theme</span>
-        </button>
+<body>
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem("theme");
+      if (t === "dark" || t === "light") document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  })();
+</script>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">Umer Atiq</a>
+    <nav aria-label="Sections">
+      <a href="#experience">Experience</a>
+      <a href="#platforms">Platforms</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-btn" id="themeBtn" type="button" aria-label="Switch between light and dark theme">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M1 12h2M21 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap">
+    <div class="hero hero-grid">
+      <div>
+        <h1>Umer Atiq</h1>
+        <p class="role">Software Engineering Manager building digital banking and payment switching for banks in Pakistan and beyond.</p>
+        <p class="intro">I lead a 16-member engineering team at Paysys Labs across backend, frontend and DevOps. We build and run mobile banking, internet banking, back-office and the transaction switch for NBP, Bank of Punjab, CDNS, Cerisma, Halan and PPCBL. I design the architecture for every sprint, still write backend code, and delivered instant payments on-site for EthSwitch in Ethiopia.</p>
+        <div class="actions">
+          <a class="btn primary" href="Umer_Atiq_Engineering_Manager_CV.pdf" download>Download CV</a>
+          <a class="btn" href="https://www.linkedin.com/in/umer-atiq" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="mailto:umeratiq007@gmail.com">Email me</a>
+        </div>
+        <p class="meta-line">Karachi, Pakistan. Open to relocation and remote roles.</p>
+      </div>
+      <div class="photo">
+        <img class="light" src="https://i.postimg.cc/VNZNYYcd/Profile-white.png" alt="Portrait of Umer Atiq" width="400" height="500">
+        <img class="dark" src="https://i.postimg.cc/kgxMtQPr/Profile-blue.png" alt="" aria-hidden="true" width="400" height="500">
       </div>
     </div>
   </div>
 
-  <!-- Container -->
-  <main class="max-w-5xl mx-auto px-4 py-8 sm:py-12">
-    <!-- Header Card -->
-    <section class="bg-white/90 dark:bg-slate-800/70 rounded-2xl shadow-sm ring-1 ring-slate-200 dark:ring-slate-700 p-6 sm:p-8">
-      <div class="flex flex-row items-center mb-6 gap-8 mobile-profile-header">
-        <!-- Placeholder image; replace src with your headshot URL if desired -->
-        <span class="mobile-profile-img-wrapper">
-          <img src="https://i.postimg.cc/VNZNYYcd/Profile-white.png"
-            alt="Profile picture"
-            class="profile-img-light mobile-profile-img w-28 h-40 sm:w-40 sm:h-52 md:w-48 md:h-60 max-w-xs border-4 border-slate-300 object-cover shadow-lg mb-0 rounded-xl bg-white" />
-          <img src="https://i.postimg.cc/kgxMtQPr/Profile-blue.png"
-            alt="Profile picture dark"
-            class="profile-img-dark mobile-profile-img w-28 h-40 sm:w-40 sm:h-52 md:w-48 md:h-60 max-w-xs border-4 border-slate-300 object-cover shadow-lg mb-0 rounded-xl bg-white" />
-        </span>
-        <div class="flex-1 mobile-profile-info">
-          <div class="mobile-name-role">
-            <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight mobile-title">Umer Atiq</h1>
-            <p class="mt-1 text-lg sm:text-xl text-slate-600 dark:text-slate-300 mobile-role"><span class="subtitle-role">Manager Software Engineering — Fintech & Digital Payments</span></p>
-          </div>
-          <p class="mt-3 max-w-3xl text-sm sm:text-base text-slate-700 dark:text-slate-300 mobile-objective">
-            Experienced Software Engineering Manager with 5+ years of expertise in <strong>Java backend development</strong> and <strong>digital payment systems</strong>. Proven track record in designing and implementing robust backend architectures for financial institutes using <strong>Java, Spring Boot, Hibernate, JPA</strong>, and <strong>Oracle/SQL Server</strong>. Specialized in <strong>ISO8583</strong> standards and driving <strong>instant payments innovation (RAAST)</strong>. Expert in <strong>microservices architecture</strong>, <strong>Spring Security</strong>, and <strong>Agile methodologies</strong>. Strong leader in mentoring engineering teams, managing full software development lifecycle, and delivering high-quality, scalable solutions that exceed expectations. Passionate about continuous learning, staying ahead of industry trends, and propelling fintech innovation to new heights.
-          </p>
-        </div>
+  <div class="wrap">
+    <div class="route" aria-labelledby="routeTitle">
+      <h2 id="routeTitle">How a transaction moves through the systems I own</h2>
+      <p class="sub">Every Open Digital transaction is routed through the Open Connect switch. Incoming 1LINK traffic arrives at the same switch and is passed to the bank's core banking system.</p>
+      <svg class="route-mobile" viewBox="0 0 340 470" role="img" aria-label="Mobile app, internet banking, transaction gateway and back-office connect to the Open Connect switch, which connects to 1LINK, RAAST and bank core systems. Incoming 1LINK transactions come back through the switch.">
+        <g class="node"><rect x="0" y="0" width="164" height="50" rx="9"/><text class="t-title" x="12" y="22">Mobile app</text><text class="t-small" x="12" y="39">6 institutions</text></g>
+        <g class="node"><rect x="176" y="0" width="164" height="50" rx="9"/><text class="t-title" x="188" y="22">Internet banking</text><text class="t-small" x="188" y="39">NBP, CDNS, BOP</text></g>
+        <g class="node"><rect x="0" y="62" width="164" height="50" rx="9"/><text class="t-title" x="12" y="84">Txn Gateway</text><text class="t-small" x="12" y="101">NBP branches</text></g>
+        <g class="node"><rect x="176" y="62" width="164" height="50" rx="9"/><text class="t-title" x="188" y="84">Back-office</text><text class="t-small" x="188" y="101">Maker-checker</text></g>
+        <path class="wire" d="M82 112 C 82 150, 150 150, 150 180"/>
+        <path class="wire" d="M258 112 C 258 150, 190 150, 190 180"/>
+        <g class="node switch"><rect x="70" y="180" width="200" height="92" rx="12"/><text class="t-title" x="170" y="216" text-anchor="middle">Open Connect</text><text class="t-small" x="170" y="236" text-anchor="middle">Transaction switch</text><text class="t-small" x="170" y="254" text-anchor="middle">Load-tested at 2,000 TPS</text></g>
+        <path class="wire" d="M120 272 C 120 310, 56 310, 56 350"/>
+        <path class="wire" d="M170 272 L 170 350"/>
+        <path class="wire" d="M220 272 C 220 310, 284 310, 284 350"/>
+        <path class="wire in" d="M40 350 C 40 300, 96 300, 100 274"/>
+        <g class="node"><rect x="0" y="350" width="108" height="64" rx="9"/><text class="t-title" x="12" y="376">1LINK</text><text class="t-small" x="12" y="394">IBFT, bills</text></g>
+        <g class="node"><rect x="116" y="350" width="108" height="64" rx="9"/><text class="t-title" x="128" y="376">RAAST</text><text class="t-small" x="128" y="394">P2P, QR, RTP</text></g>
+        <g class="node"><rect x="232" y="350" width="108" height="64" rx="9"/><text class="t-title" x="244" y="376">Bank core</text><text class="t-small" x="244" y="394">Accounts, cards</text></g>
+        <text class="t-small" x="0" y="446">Dashed line: incoming 1LINK traffic</text>
+      </svg>
+      <div class="route-scroll">
+        <svg viewBox="0 0 980 300" role="img" aria-label="Mobile app, internet banking, back-office and transaction gateway send transactions to the Open Connect switch, which routes them to 1LINK, RAAST and bank core systems. Incoming IBFT, ATM, POS and reversals from 1LINK return through the switch to the bank core.">
+          <!-- channels -->
+          <g class="node"><rect x="10" y="20" width="220" height="54" rx="10"/><text class="t-title" x="26" y="44">Mobile banking app</text><text class="t-small" x="26" y="63">6 financial institutions</text></g>
+          <g class="node"><rect x="10" y="88" width="220" height="54" rx="10"/><text class="t-title" x="26" y="112">Internet banking</text><text class="t-small" x="26" y="131">NBP, CDNS, Bank of Punjab</text></g>
+          <g class="node"><rect x="10" y="156" width="220" height="54" rx="10"/><text class="t-title" x="26" y="180">Transaction Gateway</text><text class="t-small" x="26" y="199">Used by NBP branches</text></g>
+          <g class="node"><rect x="10" y="224" width="220" height="54" rx="10"/><text class="t-title" x="26" y="248">Back-office</text><text class="t-small" x="26" y="267">Maker-checker, app control</text></g>
+          <!-- switch -->
+          <g class="node switch"><rect x="395" y="95" width="200" height="110" rx="12"/><text class="t-title" x="495" y="138" text-anchor="middle">Open Connect</text><text class="t-small" x="495" y="160" text-anchor="middle">Transaction switch</text><text class="t-small" x="495" y="180" text-anchor="middle">Load-tested at 2,000 TPS</text></g>
+          <!-- networks -->
+          <g class="node"><rect x="760" y="40" width="210" height="54" rx="10"/><text class="t-title" x="776" y="64">1LINK</text><text class="t-small" x="776" y="83">IBFT, bill payments</text></g>
+          <g class="node"><rect x="760" y="123" width="210" height="54" rx="10"/><text class="t-title" x="776" y="147">RAAST</text><text class="t-small" x="776" y="166">P2P, QR, Request to Pay</text></g>
+          <g class="node"><rect x="760" y="206" width="210" height="54" rx="10"/><text class="t-title" x="776" y="230">Bank core systems</text><text class="t-small" x="776" y="249">Accounts, cards</text></g>
+          <!-- wires out -->
+          <path class="wire" d="M230 47 C 320 47, 320 130, 395 130"/>
+          <path class="wire" d="M230 115 C 310 115, 320 140, 395 140"/>
+          <path class="wire" d="M230 183 C 310 183, 320 160, 395 160"/>
+          <path class="wire" d="M230 251 C 320 251, 320 170, 395 170"/>
+          <path class="wire" id="w1" d="M595 130 C 680 130, 680 67, 760 67"/>
+          <path class="wire" d="M595 150 C 680 150, 690 150, 760 150"/>
+          <path class="wire" d="M595 170 C 680 170, 680 233, 760 233"/>
+          <!-- inbound -->
+          <path class="wire in" d="M760 80 C 700 95, 650 110, 597 118"/>
+          <path class="wire in" d="M597 186 C 650 200, 700 225, 760 240"/>
+          <circle class="pulse" id="pulse" r="5" cx="230" cy="47" opacity="0"/>
+        </svg>
       </div>
-      <div class="sm:flex sm:items-end sm:justify-between gap-6">
-        <ul class="text-sm text-slate-700 dark:text-slate-300 space-y-1">
-          <li class="flex items-center gap-2">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.25 4.5l19.5 0M6 3v18m12-18v18M2.25 19.5l19.5 0"/></svg>
-            <a class="hover:underline" href="https://www.linkedin.com/in/umer-atiq" target="_blank" rel="noopener">LinkedIn</a>
+      <div class="legend"><span>Outgoing from Open Digital</span><span class="in">Incoming from 1LINK: IBFT, ATM cash withdrawals, POS purchases, reversals</span></div>
+      <div class="figures">
+        <div><b>16</b><small>engineers through 5 team leads</small></div>
+        <div><b>1.2–1.5M</b><small>customers on the NBP app</small></div>
+        <div><b>2,000 TPS</b><small>switch load test</small></div>
+        <div><b>1 month</b><small>to Bank of Punjab phase one</small></div>
+      </div>
+    </div>
+  </div>
+
+  <section class="block" id="experience">
+    <div class="wrap">
+      <h2>Experience</h2>
+
+      <div class="company">
+        <div class="company-head">
+          <h3>Paysys Labs</h3>
+          <p>Karachi, Pakistan<br>Sep 2020 – Present</p>
+        </div>
+        <ol class="roles" reversed>
+          <li class="current">
+            <div class="role-title"><h4>Manager Software Engineering</h4><time>Sep 2024 – Present</time></div>
+            <ul>
+              <li>Lead a 16-member team across backend, frontend and DevOps through 5 team leads, up from a 7-member backend team before promotion.</li>
+              <li>Own hiring, interviews, performance reviews, sprint planning and effort estimation for the full team.</li>
+              <li>Accountable for the Open Digital platform (mobile apps, internet banking, backend and back-office) and the transaction switch for six financial institutions.</li>
+              <li>Built CDNS, Halan, Cerisma and Bank of Punjab from scratch. Bank of Punjab's phase one launched in one month.</li>
+              <li>Design the frontend and backend architecture for every new sprint, write backend code with the team and guide frontend and mobile engineers.</li>
+              <li>Subject matter expert for the switch and the escalation point for critical switch issues across Paysys projects.</li>
+              <li>Run company-wide training on ISO 8583, Open Connect switch configuration, AI-driven test automation and using AI in daily development.</li>
+              <li>Introduced AI-driven regression testing. The team's tool runs the mobile app, internet banking and back-office end to end and produces UAT evidence with test cases and screenshots, cutting report time from 1–2 days to 1–2 hours per sprint.</li>
+              <li>Primary technical contact for bank clients, from requirement gathering and solution design to delivery planning.</li>
+            </ul>
           </li>
-          <li class="flex items-center gap-2">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657A8 8 0 116.343 5.343 8 8 0 0117.657 16.657z"/></svg>
-            <span>Karachi, Pakistan (On-site)</span>
+          <li>
+            <div class="role-title"><h4>Senior Software Engineer / Team Lead</h4><time>Jan 2023 – Aug 2024</time></div>
+            <ul>
+              <li>Led a 7-member backend team building new client backends from scratch, owning design, coding and debugging.</li>
+              <li>Mentored junior engineers and set development standards for on-time delivery.</li>
+            </ul>
           </li>
-          <li class="flex items-center gap-2">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 12v1.5a4 4 0 01-8 0V12m8 0a4 4 0 00-8 0m8 0V9a4 4 0 00-8 0v3"/></svg>
-            <a class="hover:underline" href="mailto:umeratiq007@gmail.com">umeratiq007@gmail.com</a>
+          <li>
+            <div class="role-title"><h4>Software Engineer</h4><time>Jan 2022 – Dec 2022</time></div>
+            <ul><li>Designed, developed and tested backend features for the transaction switch and national-level payment platforms.</li></ul>
           </li>
-          <li class="flex items-center gap-2">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8"/></svg>
-            <a class="hover:underline" href="tel:+923322255541">+92 332 2255541</a>
+          <li>
+            <div class="role-title"><h4>Associate Software Engineer</h4><time>Sep 2020 – Dec 2021</time></div>
+            <ul><li>Configured the Open Connect switch for client banks and contributed to early development of SBP's RAAST Connector.</li></ul>
           </li>
+        </ol>
+      </div>
+
+      <div class="company">
+        <div class="company-head">
+          <h3>iTecknologi Group</h3>
+          <p>Karachi, Pakistan<br>Nov 2019 – Feb 2020</p>
+        </div>
+        <ol class="roles">
+          <li>
+            <div class="role-title"><h4>Associate Software Engineer</h4><time>Nov 2019 – Feb 2020</time></div>
+            <ul><li>Contributed to software design, development and testing, and took part in Agile sprint ceremonies.</li></ul>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="platforms">
+    <div class="wrap">
+      <h2>Platforms I build and run</h2>
+
+      <article class="platform">
+        <div>
+          <h3>Open Digital</h3>
+          <p class="when">Mobile banking, internet banking and back-office<br>Oct 2020 – Present</p>
+          <p class="stack">Java, Spring Boot, microservices, Spring Security, SQL Server, React, React Native</p>
+          <ul class="clients" aria-label="Clients">
+            <li>NBP</li><li>Bank of Punjab</li><li>CDNS</li><li>Cerisma</li><li>Halan</li><li class="dev">PPCBL, in development</li>
+          </ul>
+        </div>
+        <dl class="features">
+          <dt>Onboarding</dt><dd>Customer registration with NADRA Verisys and biometric verification through BVS and MBVS.</dd>
+          <dt>Payments</dt><dd>IBFT, bill payments (NADRA, 1LINK) and card transactions. Led 1LINK certification of IBFT and bill payments on ISO 8583.</dd>
+          <dt>RAAST</dt><dd>RAAST ID registration, P2P transfers, QR payments and Request to Pay inside the banks' apps.</dd>
+          <dt>Cards</dt><dd>Card selection, activation and deactivation, limits and card services in the app.</dd>
+          <dt>Transaction Gateway</dt><dd>Used by NBP branches for fund transfers, IBFT and bill payments.</dd>
+          <dt>Back-office</dt><dd>Maker-checker, customer management, transaction search, and control of banks, billers, banners and service availability.</dd>
+          <dt>Security</dt><dd>OAuth2, JWT, Keycloak and encryption in line with SBP security guidelines.</dd>
+        </dl>
+      </article>
+
+      <article class="platform">
+        <div>
+          <h3>Open Connect</h3>
+          <p class="when">Financial transaction switch<br>Sep 2020 – Present</p>
+          <p class="stack">Java, Spring Boot, ISO 8583, REST, SOAP, TCP, RabbitMQ</p>
+        </div>
+        <ul>
+          <li>Routes every Open Digital transaction, financial and non-financial, to banks and external networks.</li>
+          <li>Processes incoming IBFT, ATM cash withdrawals, POS purchases and reversals from 1LINK, passing them to the bank's core system and returning the response.</li>
+          <li>Load-tested at 2,000 transactions per second with room to scale further.</li>
+          <li>Reversals, timeout handling and duplicate-transaction prevention (idempotency) across the switch and Open Digital.</li>
+          <li>Client-specific transaction templates and business logic for each bank, over REST, SOAP, TCP and ISO 8583.</li>
+          <li>My work here grew from switch configuration to owning code fixes and new features.</li>
         </ul>
+      </article>
+
+      <article class="platform">
+        <div>
+          <h3>EthSwitch IPS, Ethiopia</h3>
+          <p class="when">Instant payments, on-site<br>Mar 2025 – Mar 2026</p>
+          <p class="stack">Java, Spring Boot, ISO 20022, REST, JSON</p>
+        </div>
+        <ul>
+          <li>Led on-site delivery of P2P and P2M instant payments on Ethiopia's Interoperable Payment System. Delivered successfully.</li>
+          <li>Built ISO 20022 PACS message handlers with XSD schema validation and correlation-ID tracing.</li>
+          <li>Designed REST/JSON APIs that made integration simpler for participating banks.</li>
+          <li>Adapted Paysys's Pakistan payment stack to Ethiopian regulatory and interoperability rules.</li>
+        </ul>
+      </article>
+
+      <div class="earlier">
+        <div>
+          <h4>Ehsaas Program, Government of Pakistan</h4>
+          <p class="when">Jan 2022 – Apr 2023</p>
+          <p>Backend services for a national subsidy platform handling merchant onboarding and disbursements through an Android app.</p>
+        </div>
+        <div>
+          <h4>Mobilink Microfinance Bank</h4>
+          <p class="when">Oct 2020 – Oct 2022</p>
+          <p>One of the first Open Digital implementations, alongside NBP: mobile and web banking, CRM, onboarding, KYC, biometrics and card management.</p>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Grid -->
-    <section class="mt-8 grid md:grid-cols-3 gap-8">
-      <!-- Left column -->
-      <aside class="md:col-span-1 space-y-8">
-        <!-- Skills -->
-        <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-sm ring-1 ring-slate-200 dark:ring-slate-700 p-6">
-          <h2 class="text-lg font-semibold mb-4 mobile-section-title">Key Skills</h2>
-          <div class="skills-cloud flex flex-wrap gap-2 mobile-skills-cloud">
-            <span class="skill-tag">Leadership Management</span>
-            <span class="skill-tag">Oracle Database</span>
-            <span class="skill-tag">JPA</span>
-            <span class="skill-tag">Advising People</span>
-            <span class="skill-tag">Microservices</span>
-            <span class="skill-tag">Software Development</span>
-            <span class="skill-tag">Financial Services</span>
-            <span class="skill-tag">Java</span>
-            <span class="skill-tag">Spring Boot</span>
-            <span class="skill-tag">Hibernate</span>
-            <span class="skill-tag">Spring Security</span>
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">C#</span>
-            <span class="skill-tag">Microsoft SQL Server</span>
-            <span class="skill-tag">MySQL</span>
-            <span class="skill-tag">PHP</span>
-            <span class="skill-tag">Data Science</span>
-            <span class="skill-tag">HTML5</span>
-            <span class="skill-tag">CSS</span>
-            <span class="skill-tag">SQL</span>
-            <span class="skill-tag">Microsoft Office</span>
-          </div>
-        </div>
-        <style>
-        .skills-cloud {
-          animation: fadeInSkills 1.2s 0.3s both;
-        }
-        @keyframes fadeInSkills {
-          from { opacity: 0; transform: translateY(20px) scale(0.98); }
-          to { opacity: 1; transform: translateY(0) scale(1); }
-        }
-        .skill-tag, .tool-tag {
-          background: var(--tag-bg);
-          color: var(--tag-color);
-          font-weight: 500;
-          font-size: 0.97rem;
-          border-radius: 18px;
-          padding: 6px 16px;
-          box-shadow: 0 2px 12px #203A4311;
-          border: 1.5px solid var(--tag-border);
-          letter-spacing: 0.5px;
-          transition: background 0.3s, color 0.3s, transform 0.2s cubic-bezier(.68,-0.55,.27,1.55), box-shadow 0.3s, border 0.3s, opacity 0.3s;
-          cursor: pointer;
-          opacity: 1;
-          animation: popIn 0.7s forwards;
-          margin-bottom: 2px;
-        }
-        .skills-cloud .skill-tag:nth-child(1) { animation-delay: 0.1s; }
-        .skills-cloud .skill-tag:nth-child(2) { animation-delay: 0.15s; }
-        .skills-cloud .skill-tag:nth-child(3) { animation-delay: 0.2s; }
-        .skills-cloud .skill-tag:nth-child(4) { animation-delay: 0.25s; }
-        .skills-cloud .skill-tag:nth-child(5) { animation-delay: 0.3s; }
-        .skills-cloud .skill-tag:nth-child(6) { animation-delay: 0.35s; }
-        .skills-cloud .skill-tag:nth-child(7) { animation-delay: 0.4s; }
-        .skills-cloud .skill-tag:nth-child(8) { animation-delay: 0.45s; }
-        .skills-cloud .skill-tag:nth-child(9) { animation-delay: 0.5s; }
-        .skills-cloud .skill-tag:nth-child(10) { animation-delay: 0.55s; }
-        .skills-cloud .skill-tag:nth-child(11) { animation-delay: 0.6s; }
-        .skills-cloud .skill-tag:nth-child(12) { animation-delay: 0.65s; }
-        .skills-cloud .skill-tag:nth-child(13) { animation-delay: 0.7s; }
-        .skills-cloud .skill-tag:nth-child(14) { animation-delay: 0.75s; }
-        .skills-cloud .skill-tag:nth-child(15) { animation-delay: 0.8s; }
-        .skills-cloud .skill-tag:nth-child(16) { animation-delay: 0.85s; }
-        .skills-cloud .skill-tag:nth-child(17) { animation-delay: 0.9s; }
-        .skills-cloud .skill-tag:nth-child(18) { animation-delay: 0.95s; }
-        .skills-cloud .skill-tag:nth-child(19) { animation-delay: 1.0s; }
-        .skills-cloud .skill-tag:nth-child(20) { animation-delay: 1.05s; }
-        @keyframes popIn {
-          from { opacity: 0; transform: scale(0.7); }
-          60% { opacity: 1; transform: scale(1.15); }
-          to { opacity: 1; transform: scale(1); }
-        }
-        .skill-tag:hover, .tool-tag:hover {
-          background: var(--hover-gradient);
-          color: var(--hover-text);
-          transform: scale(1.13) translateY(-2px);
-          box-shadow: 0 4px 16px var(--hover-shadow);
-          border-color: #203a43;
-          animation: cursorPulse 0.4s;
-          opacity: 1;
-        }
-        @media (hover: hover) {
-          .skill-tag:hover, .tool-tag:hover, .projects-animated .project-card:hover, .experience-animated .experience-card:hover {
-            cursor: pointer;
-          }
-        }
-        @keyframes cursorPulse {
-          0% { transform: scale(1.0); }
-          50% { transform: scale(1.18) translateY(-2px); }
-          100% { transform: scale(1.13) translateY(-2px); }
-        }
-        @media (max-width: 640px) {
-          .skills-cloud { justify-content: center; }
-          .skill-tag, .tool-tag { font-size: 0.92rem; padding: 5px 10px; }
-        }
-        /* Tools & Tech tags */
-        .tools-cloud {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 8px;
-          margin-top: 4px;
-        }
-        /* Section backgrounds for Key Skills, Education, Tools & Tech */
-        .bg-white, .bg-white\/90, .bg-white\/80, .dark .bg-slate-800, .dark .bg-slate-800\/70 {
-          background: var(--card) !important;
-          color: var(--ink) !important;
-        }
-        /* Projects hover effect */
-        .projects-animated .project-card,
-        .experience-animated .experience-card {
-          background: var(--card);
-          color: var(--ink);
-          border-radius: 12px;
-          box-shadow: 0 1px 6px #2563eb11;
-          padding: 14px 18px;
-          transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.2s cubic-bezier(.68,-0.55,.27,1.55);
-        }
-        .dark .projects-animated .project-card,
-        .dark .experience-animated .experience-card {
-          background: var(--card);
-          color: var(--ink);
-        }
-        .projects-animated .project-card:hover,
-        .experience-animated .experience-card:hover {
-          background: var(--hover-gradient);
-          color: var(--hover-text);
-          box-shadow: 0 4px 24px var(--hover-shadow);
-          transform: scale(1.035) translateY(-2px);
-          animation: cursorPulse 0.4s;
-          cursor: pointer;
-        }
-        /* Section backgrounds */
-        section.bg-white, section.bg-white\/90, section.bg-white\/80 {
-          background: var(--card) !important;
-        }
-        .dark section.bg-white, .dark section.bg-white\/90, .dark section.bg-white\/80 {
-          background: var(--card) !important;
-        }
-        .ring-slate-200 { border-color: var(--border) !important; }
-        .dark .ring-slate-700 { border-color: var(--border) !important; }
-        .text-slate-700, .text-slate-900 { color: var(--ink) !important; }
-        .dark .text-slate-100, .dark .text-slate-300 { color: var(--ink) !important; }
-        .border-slate-300, .border-slate-200 { border-color: var(--border) !important; }
-        .dark .border-slate-600, .dark .border-slate-700 { border-color: var(--border) !important; }
-      </style>
-
-        <!-- Education -->
-        <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-sm ring-1 ring-slate-200 dark:ring-slate-700 p-6">
-          <h2 class="text-lg font-semibold mb-4 mobile-section-title">Education</h2>
-          <div class="space-y-4 text-sm">
-            <div class="education-entry">
-              <p class="font-medium">B.S. Computer Science</p>
-              <p class="text-slate-600 dark:text-slate-400">Karachi Institute of Economics & Technology (KIET)</p>
-              <p class="text-slate-500 dark:text-slate-400">2016 – 2019</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Tools -->
-        <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-sm ring-1 ring-slate-200 dark:ring-slate-700 p-6" style="min-height: 626px;">
-          <h2 class="text-lg font-semibold mb-4 mobile-section-title">Tools & Tech</h2>
-          <div class="tools-cloud flex flex-wrap gap-2 mobile-tools-cloud">
-            <span class="tool-tag">Spring Boot</span>
-            <span class="tool-tag">Hibernate</span>
-            <span class="tool-tag">JPA</span>
-            <span class="tool-tag">Spring Security</span>
-            <span class="tool-tag">Oracle Database</span>
-            <span class="tool-tag">MS SQL Server</span>
-            <span class="tool-tag">MySQL</span>
-            <span class="tool-tag">Git / GitLab</span>
-            <span class="tool-tag">Microservices</span>
-            <span class="tool-tag">REST APIs</span>
-            <span class="tool-tag">Agile</span>
-            <span class="tool-tag">RAAST Integration</span>
-            <span class="tool-tag">ISO8583</span>
-            <span class="tool-tag">Digital Payments</span>
-            <span class="tool-tag">Backend Architecture</span>
-          </div>
-        </div>
-      </aside>
-
-      <!-- Right column -->
-      <div class="md:col-span-2 space-y-8">
-        <!-- Experience -->
-        <section class="bg-white dark:bg-slate-800 rounded-2xl shadow-sm ring-1 ring-slate-200 dark:ring-slate-700 p-6">
-          <h2 class="text-lg font-semibold mb-6">Experience</h2>
-          <div class="experience-animated">
-            <article class="mb-8 experience-card">
-              <header class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between">
-                <h3 class="text-base sm:text-lg font-semibold">Manager Software Engineering Level 1 — Paysys Labs</h3>
-                <p class="text-sm text-slate-500">Sep 2020 – Present</p>
-              </header>
-              <ul class="mt-3 list-disc pl-5 space-y-2 text-sm">
-                <li>Lead a team of software engineers, driving the design, development, and delivery of complex software projects across digital banking and payment systems.</li>
-                <li>Mentor and guide junior team members, fostering a collaborative environment and providing technical leadership throughout the software development lifecycle.</li>
-                <li>Oversee end-to-end development, from planning and coding to testing and deployment, ensuring high-quality deliverables that meet business objectives.</li>
-                <li>Collaborate with cross-functional teams, including product management and QA, to ensure project goals are met on time and within scope.</li>
-                <li>Spearhead technical innovation and process improvements to enhance system architecture, scalability, and performance for fintech solutions.</li>
-                <li>Design, code, and debug complex software projects, taking full ownership of the development, documentation, and rigorous testing of software solutions.</li>
-                <li>Lead the maintenance and upgrades of existing software systems, making strategic technology decisions for enhanced productivity and reliability.</li>
-                <li>Pioneer research and development efforts, driving the implementation of cutting-edge features and elevating application usability.</li>
-                <li>Manage team workload and priorities, effectively addressing roadblocks and ensuring clear communication between stakeholders.</li>
-                <li>Uphold and promote impeccable development principles, guaranteeing timely delivery of solutions while adhering to budgetary constraints and quality standards.</li>
-              </ul>
-            </article>
-            <article class="mb-8 experience-card">
-              <header class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between">
-                <h3 class="text-base sm:text-lg font-semibold">Software Engineer — iTecknologi Group</h3>
-                <p class="text-sm text-slate-500">Nov 2019 – Feb 2020</p>
-              </header>
-              <ul class="mt-3 list-disc pl-5 space-y-2 text-sm">
-                <li>Worked on software development projects, contributing to design, implementation, and testing phases.</li>
-                <li>Collaborated with team members to deliver quality software solutions that met client requirements.</li>
-                <li>Gained foundational experience in software engineering practices and professional development workflows.</li>
-              </ul>
-            </article>
-          </div>
-        </section>
-
-        <!-- Projects / Integrations -->
-        <section class="bg-white dark:bg-slate-800 rounded-2xl shadow-sm ring-1 ring-slate-200 dark:ring-slate-700 p-6">
-          <h2 class="text-lg font-semibold mb-4">Projects & Integrations</h2>
-          <div class="space-y-5 text-sm projects-animated mobile-projects-responsive">
-            <div class="project-card">
-              <p class="font-medium">Real-Time Payment System Integration (Eth-Switch) — ISO 20022 Standards Implementation | 2024 – Present</p>
-              <p class="mt-1 text-slate-700 dark:text-slate-300">
-                Architected and implemented instant payment solutions leveraging <strong>ISO 20022</strong> messaging standards for interbank fund transfers. Developed comprehensive <strong>PACS</strong> message handlers enabling seamless <strong>P2P and P2M</strong> transaction processing between partner financial institutions. Engineered high-performance <strong>RESTful APIs</strong> with optimized <strong>JSON</strong> request/response structures to streamline bank integration workflows and reduce onboarding time. Implementation encompasses XSD schema validation, distributed tracing with correlation IDs, advanced performance optimization, and extensive collaboration with platform providers to deliver production-grade, secure, and thoroughly documented financial solutions.
-              </p>
-            </div>
-            <div class="project-card">
-              <p class="font-medium">National Banking Platform — API Development & Integration | 2023 – Present</p>
-              <p class="mt-1 text-slate-700 dark:text-slate-300">
-                Engineered and maintained production-grade RESTful services powering nationwide digital banking applications; designed intelligent middleware layers optimizing data transmission and application responsiveness; fortified API endpoints implementing <strong>Spring Security</strong> frameworks and industry security standards.
-              </p>
-            </div>
-            <div class="project-card">
-              <p class="font-medium">Digital Banking Services Platform — API & Middleware Architecture | 2023 – Present</p>
-              <p class="mt-1 text-slate-700 dark:text-slate-300">
-                Designed and implemented horizontally scalable API infrastructure and middleware connecting diverse internal and external financial systems; enhanced system reliability, throughput, and code maintainability; integrated security controls and regulatory compliance throughout the software development lifecycle.
-              </p>
-            </div>
-          </div>
-        </section>
-        <style>
-          /* Mobile-only responsive changes */
-          @media (max-width: 640px) {
-            .mobile-profile-header {
-              flex-direction: column !important;
-              gap: 1.2rem !important;
-              align-items: flex-start !important;
-            }
-            .mobile-profile-img-wrapper {
-              width: 100%;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-            }
-            .mobile-profile-img {
-              width: 112px !important;
-              height: 150px !important;
-              max-width: 90vw !important;
-              max-height: 40vw !important;
-              margin-bottom: 0.5rem !important;
-              margin-left: auto !important;
-              margin-right: auto !important;
-              display: block !important;
-              object-fit: cover !important;
-              border-radius: 0.75rem !important;
-            }
-            .profile-img-light { display: block !important; }
-            .profile-img-dark { display: none !important; }
-            .dark .profile-img-light { display: none !important; }
-            .dark .profile-img-dark { display: block !important; }
-            .mobile-name-role {
-              width: 100%;
-              display: flex;
-              flex-direction: column;
-              align-items: center !important;
-              margin-left: 0 !important;
-              margin-right: 0 !important;
-            }
-            .mobile-title {
-              text-align: center !important;
-              font-size: 1.5rem !important;
-              margin-bottom: 0 !important;
-            }
-            .mobile-role {
-              text-align: center !important;
-              font-size: 1.1rem !important;
-              margin-top: 0.1rem !important;
-              margin-bottom: 0.5rem !important;
-            }
-            .mobile-profile-info {
-              width: 100% !important;
-              text-align: left !important;
-            }
-            .mobile-name-role {
-              margin-left: 0.5rem !important;
-            }
-            .mobile-title {
-              text-align: left !important;
-              font-size: 1.5rem !important;
-              margin-bottom: 0 !important;
-            }
-            .mobile-role {
-              text-align: left !important;
-              font-size: 1.1rem !important;
-              margin-top: 0.1rem !important;
-              margin-bottom: 0.5rem !important;
-            }
-            .mobile-objective {
-              text-align: left !important;
-              margin-top: 0.7rem !important;
-              margin-left: 0.5rem !important;
-              margin-right: 0.5rem !important;
-            }
-            /* Section titles left-aligned like Education */
-            .mobile-section-title {
-              text-align: left !important;
-              margin-left: 0 !important;
-            }
-            /* Key Skills and Tools & Tech elements left-aligned */
-            .mobile-skills-cloud, .mobile-tools-cloud {
-              justify-content: flex-start !important;
-            }
-            /* Project cards responsive */
-            .mobile-projects-responsive {
-              display: flex !important;
-              flex-direction: column !important;
-              gap: 0.7rem !important;
-            }
-            .projects-animated .project-card {
-              padding: 10px 8px !important;
-            }
-          }
-        .projects-animated .project-card {
-          background: transparent;
-          border-radius: 12px;
-          box-shadow: 0 1px 6px #2563eb11;
-          padding: 14px 18px;
-          transition: background 0.3s, box-shadow 0.3s, color 0.3s, transform 0.2s cubic-bezier(.68,-0.55,.27,1.55);
-        }
-        .projects-animated .project-card:hover {
-          background: var(--hover-gradient);
-          color: var(--hover-text);
-          box-shadow: 0 4px 24px var(--hover-shadow);
-          transform: scale(1.035) translateY(-2px);
-          animation: cursorPulse 0.4s;
-          cursor: pointer;
-        }
-        .education-entry {
-          background: transparent;
-          border-radius: 12px;
-          box-shadow: 0 1px 6px #2563eb11;
-          padding: 14px 18px;
-          transition: background 0.3s, box-shadow 0.3s, color 0.3s, transform 0.2s cubic-bezier(.68,-0.55,.27,1.55);
-        }
-        .education-entry:hover {
-          background: var(--hover-gradient);
-          color: var(--hover-text);
-          box-shadow: 0 4px 24px var(--hover-shadow);
-          transform: scale(1.035) translateY(-2px);
-          animation: cursorPulse 0.4s;
-          cursor: pointer;
-        }
-        </style>
+  <section class="block" id="skills">
+    <div class="wrap">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div><h3>Leadership</h3><p>Hiring, performance reviews, sprint planning, estimation, client and stakeholder management, company-wide training</p></div>
+        <div><h3>Payments and standards</h3><p>ISO 8583, ISO 20022, RAAST, IPS, IBFT, ATM/POS, 1LINK, NADRA Verisys, BVS/MBVS</p></div>
+        <div><h3>Languages and frameworks</h3><p>Java, SQL, JavaScript, Spring Boot, Spring Security, Spring Data JPA, Hibernate</p></div>
+        <div><h3>Security</h3><p>OAuth2, JWT, Keycloak, encryption, PCI-DSS</p></div>
+        <div><h3>Data and messaging</h3><p>MS SQL Server, Oracle, MySQL, RabbitMQ, Redis, Memcached</p></div>
+        <div><h3>Quality and delivery</h3><p>JUnit, Mockito, SonarQube, Postman, Swagger, GitLab CI, Git, JIRA, Linux</p></div>
+        <div><h3>Frontend my team builds</h3><p>React, React Native (architecture and technical guidance)</p></div>
+        <div><h3>AI</h3><p>Claude, ChatGPT, GitHub Copilot, AI-driven test automation</p></div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
-  <footer class="max-w-5xl mx-auto px-4 pb-12 text-center text-xs text-slate-500">
-    © <span id="year"></span> Umer Atiq
-  </footer>
+  <section class="block">
+    <div class="wrap facts">
+      <div>
+        <h3>Award</h3>
+        <p>Integrity Champion Award</p>
+        <p class="muted">Paysys Labs</p>
+      </div>
+      <div>
+        <h3>Education</h3>
+        <p>BS Computer Science<br><span class="muted">PAF-KIET, Karachi. 2016 – 2019</span></p>
+        <p>DAE, Information Technology<br><span class="muted">Govt. Polytechnic College, Karachi. 2015 – 2018</span></p>
+      </div>
+      <div>
+        <h3>Languages</h3>
+        <p>English, professional</p>
+        <p>Urdu, native</p>
+      </div>
+    </div>
+  </section>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2>Looking for someone to lead your payments engineering?</h2>
+      <p>I'm open to engineering manager roles in fintech and digital payments, in Pakistan, abroad or remote.</p>
+      <div class="actions">
+        <a class="btn primary" href="mailto:umeratiq007@gmail.com">umeratiq007@gmail.com</a>
+        <a class="btn" href="tel:+923322255541">+92-332-2255541</a>
+        <a class="btn" href="https://www.linkedin.com/in/umer-atiq" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="Umer_Atiq_Engineering_Manager_CV.pdf" download>Download CV</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Umer Atiq, Karachi, Pakistan</div>
+</footer>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+    var btn = document.getElementById("themeBtn");
+    function current() {
+      var t = root.getAttribute("data-theme");
+      if (t) return t;
+      return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    }
+    btn.addEventListener("click", function () {
+      var next = current() === "dark" ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      try { localStorage.setItem("theme", next); } catch (e) {}
+    });
+
+    // One orchestrated moment: a single transaction travels the route once.
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    var dot = document.getElementById("pulse");
+    var legs = [
+      document.querySelector(".route .wire"),
+      document.getElementById("w1")
+    ];
+    if (!dot || !legs[0] || !legs[1] || !legs[0].getTotalLength) return;
+    var i = 0, start = null, dur = 1100;
+    function step(ts) {
+      if (!start) start = ts;
+      var p = Math.min((ts - start) / dur, 1);
+      var e = p < .5 ? 2 * p * p : 1 - Math.pow(-2 * p + 2, 2) / 2;
+      var path = legs[i], pt = path.getPointAtLength(e * path.getTotalLength());
+      dot.setAttribute("cx", pt.x); dot.setAttribute("cy", pt.y); dot.setAttribute("opacity", 1);
+      if (p < 1) return requestAnimationFrame(step);
+      if (i === 0) { i = 1; start = null; setTimeout(function () { requestAnimationFrame(step); }, 250); }
+    }
+    setTimeout(function () { requestAnimationFrame(step); }, 600);
+  })();
+</script>
 </body>
 </html>
